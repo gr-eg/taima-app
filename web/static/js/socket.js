@@ -57,7 +57,8 @@ socket.connect({token: window.userToken})
 let channel = socket.channel("event:all", {})
 
 channel.on("new_event", payload => {
-  alert("Button pressed")
+  console.log(payload.id)
+  document.getElementById("orientation").innerHTML = payload.id
 })
 
 channel.join()

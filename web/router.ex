@@ -23,6 +23,6 @@ defmodule Timr.Router do
   scope "/api", Timr do
     pipe_through :api
 
-    post "/event", EventController, :create
+    post "/orientation/:id", EventController, :show
   end
 end
