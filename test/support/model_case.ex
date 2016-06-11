@@ -1,4 +1,4 @@
-defmodule Timr.ModelCase do
+defmodule Taima.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,16 +16,16 @@ defmodule Timr.ModelCase do
 
   using do
     quote do
-      alias Timr.Repo
+      alias Taima.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
-      import Timr.ModelCase
+      import Taima.ModelCase
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Timr.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Taima.Repo, [])
     end
 
     :ok

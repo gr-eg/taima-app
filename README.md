@@ -1,4 +1,4 @@
-# Timr
+# Taima
 
 To start your Phoenix app:
 

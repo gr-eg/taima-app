@@ -1,4 +1,4 @@
-defmodule Timr do
+defmodule Taima do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -8,23 +8,23 @@ defmodule Timr do
 
     children = [
       # Start the endpoint when the application starts
-      supervisor(Timr.Endpoint, []),
+      supervisor(Taima.Endpoint, []),
       # Start the Ecto repository
-      worker(Timr.Repo, []),
+      worker(Taima.Repo, []),
       # Here you could define other workers and supervisors as children
-      # worker(Timr.Worker, [arg1, arg2, arg3]),
+      # worker(Taima.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Timr.Supervisor]
+    opts = [strategy: :one_for_one, name: Taima.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    Timr.Endpoint.config_change(changed, removed)
+    Taima.Endpoint.config_change(changed, removed)
     :ok
   end
 end

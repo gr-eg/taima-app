@@ -1,5 +1,5 @@
-defmodule Timr.PageController do
-  use Timr.Web, :controller
+defmodule Taima.PageController do
+  use Taima.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

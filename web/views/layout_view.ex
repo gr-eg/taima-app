@@ -1,3 +1,3 @@
-defmodule Timr.LayoutView do
-  use Timr.Web, :view
+defmodule Taima.LayoutView do
+  use Taima.Web, :view
 end

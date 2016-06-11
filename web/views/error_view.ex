@@ -1,5 +1,5 @@
-defmodule Timr.ErrorView do
-  use Timr.Web, :view
+defmodule Taima.ErrorView do
+  use Taima.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

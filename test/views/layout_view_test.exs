@@ -1,3 +1,3 @@
-defmodule Timr.LayoutViewTest do
-  use Timr.ConnCase, async: true
+defmodule Taima.LayoutViewTest do
+  use Taima.ConnCase, async: true
 end

@@ -1,12 +1,12 @@
-defmodule Timr.Web do
+defmodule Taima.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Timr.Web, :controller
-      use Timr.Web, :view
+      use Taima.Web, :controller
+      use Taima.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -27,11 +27,11 @@ defmodule Timr.Web do
     quote do
       use Phoenix.Controller
 
-      alias Timr.Repo
+      alias Taima.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Timr.Router.Helpers
+      import Taima.Router.Helpers
     end
   end
 
@@ -45,7 +45,7 @@ defmodule Timr.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Timr.Router.Helpers
+      import Taima.Router.Helpers
     end
   end
 
@@ -59,7 +59,7 @@ defmodule Timr.Web do
     quote do
       use Phoenix.Channel
 
-      alias Timr.Repo
+      alias Taima.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 

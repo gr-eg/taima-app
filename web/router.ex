@@ -1,5 +1,5 @@
-defmodule Timr.Router do
-  use Timr.Web, :router
+defmodule Taima.Router do
+  use Taima.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,16 +13,16 @@ defmodule Timr.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Timr do
+  scope "/", Taima do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  scope "/api", Timr do
+  scope "/api", Taima do
     pipe_through :api
 
-    post "/orientation/:id", EventController, :show
+    get "/orientation/:id", EventController, :show
   end
 end

@@ -1,5 +1,5 @@
-defmodule Timr.PageControllerTest do
-  use Timr.ConnCase
+defmodule Taima.PageControllerTest do
+  use Taima.ConnCase
 
   test "GET /" do
     conn = get conn(), "/"

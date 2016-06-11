@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :timr, Timr.Endpoint,
+config :taima, Taima.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "9580AlWxcvp4CFCmaIDoBuwEmhSZKrBZm6un8T9JtuHZvdwrVgBZnvjeXBEdmlht",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Timr.PubSub,
+  pubsub: [name: Taima.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

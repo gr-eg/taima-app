@@ -1,3 +1,3 @@
-defmodule Timr.PageView do
-  use Timr.Web, :view
+defmodule Taima.PageView do
+  use Taima.Web, :view
 end
